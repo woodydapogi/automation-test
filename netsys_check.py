@@ -39,6 +39,7 @@ class Check:
 
     def ping_ip(self):
         #Send icmp requests.
+        # for Linux - ping -c 1 <host>
         ip_addr = Popen(['ping', '-n', '1', self.details], stdout=PIPE, stderr=PIPE)
         output, error = ip_addr.communicate()
 
