@@ -67,7 +67,7 @@ class Check:
         # check openvpn connection from the client sites.
 
         # add host and dump to existing json data. 
-        # purpose: for security
+        # for security purposes.
         vyos_details = vyos["host"]=self.details
 
         json.dumps(vyos_details)
